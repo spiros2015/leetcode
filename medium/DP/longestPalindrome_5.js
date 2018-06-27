@@ -1,3 +1,8 @@
+//5. Longest Palindromic Substring
+/**
+ * @param {string} s
+ * @return {string}
+ */
 var longestPalindrome = function(s) {
     if(s.length<=1) return s;
     let left=0,right=0;
