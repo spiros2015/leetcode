@@ -1,4 +1,6 @@
-//查找1-num之间素数之和
+/*
+*查找1-num之间素数之和
+**/
 let findAllPrime = function (num) {
     let res = [2];
     let i=3;
