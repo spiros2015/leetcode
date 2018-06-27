@@ -60,5 +60,5 @@ let insert= function(nums,ele){
         len = Math.floor(len/2);
     }
     nums[len]=ele;
-    console.log(nums);
+    return nums;
 };
