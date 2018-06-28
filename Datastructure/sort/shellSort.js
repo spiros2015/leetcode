@@ -11,6 +11,8 @@ let shellSort = function (nums) {
             nums[j]=temp;
         }
         add=Math.floor(add/2)
+        console.log(nums)
     }
     return nums;
 };
+console.log(shellSort([3, 1, 2, 4, 6,10,0,100,2]));
