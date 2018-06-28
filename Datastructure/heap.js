@@ -36,15 +36,11 @@ let deleteMin=function(nums){
   let min = nums[1];
   let lastElement= nums[len];
   let i =1;
-  for (;i<=len;){
+  for (;2*i<=len;){
       let child=2*i;
-      if(child===len){
-          nums[i]=nums[i]>nums[child]?nums[child]:nums[i];
-          break;
-      }
-      if(nums[child]>nums[child+1])
+      if(child!==len&&nums[child]>nums[child+1])
           child++;
-      nums[i]=nums[i]>nums[child]?nums[child]:nums[i];
+      nums[i]=nums[child];
       i=child;
   }
   nums[i]=lastElement;
